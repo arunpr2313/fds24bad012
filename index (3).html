@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online Course Registration</h1>
+
+        <form id="registrationForm">
+
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+
+            <label for="registerNumber">Register Number</label>
+            <input type="text" id="registerNumber" placeholder="Enter register number">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="course">Course Name</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+            </select>
+
+            <label>Learning Mode</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="mode" value="Online"> Online
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="Offline"> Offline
+                </label>
+            </div>
+
+            <label for="semester">Semester</label>
+            <select id="semester">
+                <option value="">Select Semester</option>
+                <option value="Semester 1">Semester 1</option>
+                <option value="Semester 2">Semester 2</option>
+                <option value="Semester 3">Semester 3</option>
+                <option value="Semester 4">Semester 4</option>
+                <option value="Semester 5">Semester 5</option>
+                <option value="Semester 6">Semester 6</option>
+                <option value="Semester 7">Semester 7</option>
+                <option value="Semester 8">Semester 8</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+
+            <p id="message"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
